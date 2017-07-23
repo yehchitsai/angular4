@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  sitename = "The Will Will Web";
+  siteurl = "http://blog.miniasp.com/";
   constructor() { }
 
   ngOnInit() {
