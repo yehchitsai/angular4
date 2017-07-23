@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   keyword = '123';
-  doSearch(evt: KeyboardEvent) {
-    this.keyword = (evt.target as HTMLInputElement).value;
+  doSearch(value: string) {
+    this.keyword = value;
   }
   clear(evt: KeyboardEvent) {
     console.log(evt);
