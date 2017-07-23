@@ -75,7 +75,7 @@ export class AppComponent {
 
   deleteArticle(target) {
     const idx = this.data.indexOf(target);
-    this.data.splice(idx,1);
+    this.data.splice(idx, 1);
   }
 
   doSearch(value: string) {
