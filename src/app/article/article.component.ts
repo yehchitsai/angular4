@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -8,8 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ArticleComponent implements OnInit {
   @Input() item;
   constructor() { }
+  @Output() delete = new EventEmitter<any>();
 
   ngOnInit() {
+  }
+
+  onDelete(){
+    this.delete.emit(this.item);
   }
 
 }
