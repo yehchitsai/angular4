@@ -32,7 +32,7 @@
             <h3 [innerText]="this.subtitle" [ngClass]="{red:setRed}" [style.font-size]="'40px'"></h3>
           </div>
 
-          <div id="social-icons" class="pull-right social-icon">
+          <div *ngIf="setRed" id="social-icons" class="pull-right social-icon">
             <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
               <img src="/assets/images/facebook.png">
             </a>
