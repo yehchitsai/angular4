@@ -29,7 +29,7 @@
 
           <div class="pull-left">
             <h1><a [href]="siteurl">{{this.sitename}}</a></h1>
-            <h3 [innerText]="this.subtitle"></h3>
+            <h3 [innerText]="this.subtitle" [ngClass]="{red:setRed}" [style.font-size]="'40px'"></h3>
           </div>
 
           <div id="social-icons" class="pull-right social-icon">
